@@ -1,0 +1,66 @@
+/* ----------------------------------------------------------------
+	Extra Styles
+-----------------------------------------------------------------*/
+.container-fluid {
+	overflow: hidden;
+}
+
+.slick-slide {
+	margin: 1rem;
+	height: auto;
+}
+
+.slick-next, .slick-arrow {
+	&:before {
+		color: $theme-color;
+		font-size: 2rem;
+	}
+}
+
+.event {
+	margin-bottom: 1.875rem;
+
+	.event-image {
+		img {
+			min-width: 20rem;
+			width: 100%;
+			height: auto;
+			object-fit: cover;
+
+			@include media-breakpoint-up(xxl) {
+				height: 100%;
+			}
+		}
+	}
+
+	.event-title {
+		font-size: 1.25rem;
+	}
+
+	.event-info {
+		a {
+			font-family: $heading-font;
+			font-weight: 500;
+			font-size: 0.875rem;
+		}
+	}
+}
+
+.feedback {
+	margin-bottom: 1.875rem;
+}
+
+.feedback-details {
+	p {
+		color: #757575;
+	}
+}
+
+#map {
+	@include media-breakpoint-up(lg) {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 100%;
+	}
+}
