@@ -6,8 +6,12 @@
 }
 
 .slick-slide {
-	margin: 1rem;
+	// margin: 1rem;
 	height: auto;
+}
+
+.slick-prev {
+	left: -38px;
 }
 
 .slick-next, .slick-arrow {
